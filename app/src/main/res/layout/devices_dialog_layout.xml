@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="600dp"
+    android:background="#3E80B4"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Seleccione un dispositivo BT"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#3E80B4"
+        android:orientation="vertical" >
+
+        <ListView android:id="@+id/paired_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:stackFromBottom="false"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/connecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:textColor="#FFF"
+            android:id="@+id/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si no hay dispositivos en la lista, por favor enlaza tu dispositivo en la configuración de Android"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="5dp"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
